@@ -10,7 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            SchemeCORSDemo(schemeToUse: "https")
+                .tabItem {
+                    Image(systemName: "safari")
+                    Text("HTTPS")
+            }
+            SchemeCORSDemo(schemeToUse: "http")
+                .tabItem {
+                    Image(systemName: "safari")
+                    Text("HTTP")
+            }
+            SchemeCORSDemo(schemeToUse: "custom-scheme")
+                .tabItem {
+                    Image(systemName: "safari")
+                    Text("Custom")
+            }
+        }
     }
 }
 

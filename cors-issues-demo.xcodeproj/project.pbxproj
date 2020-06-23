@@ -13,6 +13,8 @@
 		D35BAD5324A2521A00B747E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35BAD5224A2521A00B747E1 /* Assets.xcassets */; };
 		D35BAD5624A2521A00B747E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35BAD5524A2521A00B747E1 /* Preview Assets.xcassets */; };
 		D35BAD5924A2521A00B747E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35BAD5724A2521A00B747E1 /* LaunchScreen.storyboard */; };
+		D35BAD6124A2528D00B747E1 /* SchemeCorsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35BAD6024A2528D00B747E1 /* SchemeCorsDemo.swift */; };
+		D35BAD6524A25F9F00B747E1 /* ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35BAD6424A25F9F00B747E1 /* ObjC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		D35BAD5524A2521A00B747E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D35BAD5824A2521A00B747E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35BAD5A24A2521A00B747E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35BAD6024A2528D00B747E1 /* SchemeCorsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeCorsDemo.swift; sourceTree = "<group>"; };
+		D35BAD6224A25F8A00B747E1 /* ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjC.h; sourceTree = "<group>"; };
+		D35BAD6324A25F9F00B747E1 /* cors-issues-demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cors-issues-demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D35BAD6424A25F9F00B747E1 /* ObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				D35BAD5724A2521A00B747E1 /* LaunchScreen.storyboard */,
 				D35BAD5A24A2521A00B747E1 /* Info.plist */,
 				D35BAD5424A2521A00B747E1 /* Preview Content */,
+				D35BAD6024A2528D00B747E1 /* SchemeCorsDemo.swift */,
+				D35BAD6224A25F8A00B747E1 /* ObjC.h */,
+				D35BAD6424A25F9F00B747E1 /* ObjC.m */,
+				D35BAD6324A25F9F00B747E1 /* cors-issues-demo-Bridging-Header.h */,
 			);
 			path = "cors-issues-demo";
 			sourceTree = "<group>";
@@ -107,6 +117,7 @@
 				TargetAttributes = {
 					D35BAD4824A2521800B747E1 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -146,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35BAD6524A25F9F00B747E1 /* ObjC.m in Sources */,
+				D35BAD6124A2528D00B747E1 /* SchemeCorsDemo.swift in Sources */,
 				D35BAD4D24A2521800B747E1 /* AppDelegate.swift in Sources */,
 				D35BAD4F24A2521800B747E1 /* SceneDelegate.swift in Sources */,
 				D35BAD5124A2521800B747E1 /* ContentView.swift in Sources */,
@@ -284,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"cors-issues-demo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -294,6 +308,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "n.cors-issues-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cors-issues-demo/cors-issues-demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"cors-issues-demo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -313,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "n.cors-issues-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cors-issues-demo/cors-issues-demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
